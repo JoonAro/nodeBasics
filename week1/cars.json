@@ -1,0 +1,6 @@
+[
+    {"model":"Model-T","color": "blue","licence": "abc-1"},
+    {"model":"GTX","color":"green","licence": "xyz-12"},
+    {"model":"Model-T","color":"green","licence": "a-1"},
+    {"model":"Nova","color":"red","licence": "gt-123"}
+]
