@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home json</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', init);
+
+        async function init(){
+            //object with method name, body, headers and body to server
+            const options = {
+                method:'POST',
+                body:JSON.stringify({firstname:'Matt', lastname:'River'}),
+                headers:{'Content-Type':'application/json'}
+            };
+            //if you use GET you don't need options
+            //if you use POST or other commands you need options
+            const data = await fetch('/',options);
+            const jsonData = await data.json();
+            document.getElementById('resultarea').textContent=JSON.stringify(jsonData,null,4);
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Home json</h1>
+    <pre id="resultarea"></pre>
+</body>
+</html>

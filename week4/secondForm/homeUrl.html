@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home url</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', init);
+
+        async function init(){
+            //options because we are posting. object with method name, body, headers and body to server
+            const options = {
+                method:'POST',
+                body:'firstname=Vera&lastname=River',
+                headers:{'Content-Type':'application/x-www-form-urlencoded'}
+            };
+            //if you use GET you don't need options
+            //if you use POST or other commands you need options
+            //you can get and send with fetch
+            const data = await fetch('/',options);
+            //requesthandler gives us javascript object. we sent that as json string to here
+            const jsonData = await data.json();
+            document.getElementById('resultarea').textContent=JSON.stringify(jsonData,null,2);
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Home url</h1>
+    <pre id="resultarea"></pre>
+</body>
+</html>
