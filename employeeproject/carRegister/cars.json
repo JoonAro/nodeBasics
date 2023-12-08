@@ -1,0 +1,14 @@
+[
+    {
+        "model": "a",
+        "licence": "abc-123"
+    },
+    {
+        "model": "b",
+        "licence": "abx-231"
+    },
+    {
+        "model": "c",
+        "licence": "dbc-321"
+    }
+]
