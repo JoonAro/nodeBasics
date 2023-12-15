@@ -19,5 +19,33 @@
         "lastname": "River",
         "department": "ict",
         "salary": 5000
+    },
+    {
+        "id": 12,
+        "firstname": "a",
+        "lastname": "x",
+        "department": "c",
+        "salary": 2
+    },
+    {
+        "id": 14,
+        "firstname": "abc",
+        "lastname": "ddd",
+        "department": "fdafa",
+        "salary": 3
+    },
+    {
+        "id": 7,
+        "firstname": "Mikko",
+        "lastname": "Matikainen",
+        "department": "Maintenance",
+        "salary": 2000
+    },
+    {
+        "id": 6,
+        "firstname": "dsa",
+        "lastname": "aafds",
+        "department": "ict",
+        "salary": 345
     }
 ]

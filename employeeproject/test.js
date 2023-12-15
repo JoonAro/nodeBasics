@@ -7,3 +7,5 @@ Object.assign(tmp, { b: +tmp.b, c: 'erty' })
 console.log(tmp);
 tmp.d = 12345;
 console.log(tmp);
+tmp['x'] = 'abc';
+console.log(tmp);

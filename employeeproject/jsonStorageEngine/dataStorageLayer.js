@@ -49,7 +49,8 @@ function createDataStorage(storagePath, storageConfig) {
                         reject(MESSAGES.NOT_INSERTED());
                     }
                     //if items length is 1 and not zero
-                    else if (await getFromStorage(item[primary_key]).length > 0) {
+                    //double parentheses makes it await until getfromstorage gets the data and it can really check it
+                    else if ((await getFromStorage(item[primary_key])).length > 0) {
                         reject(MESSAGES.ALREADY_IN_USE(item[primary_key]));
                     }
                     //if await addToStorage(item)=true

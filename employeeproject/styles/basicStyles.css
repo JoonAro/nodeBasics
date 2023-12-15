@@ -1,0 +1,18 @@
+h1 {
+    color: green;
+}
+
+body {
+    background-image: url("/images/speedButton.png");
+    background-repeat: repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.error {
+    color: red;
+}
+
+.info {
+    color: green;
+}
